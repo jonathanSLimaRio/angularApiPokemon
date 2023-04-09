@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 import {
+  Pokemon,
   getPokemonImage,
   getPokemonNumber,
-  Pokemon,
 } from '../../_model/Pokemon';
 
 @Component({
@@ -11,6 +11,7 @@ import {
   styleUrls: ['./pokemon-card.component.sass'],
 })
 export class PokemonCardComponent {
+[x: string]: any;
   @Input()
   public pokemon!: Pokemon;
 
